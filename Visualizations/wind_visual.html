@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Challenge</title>
+    <title>Wind Speed Visualization</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo" href="index.html">Latitude</a>
+        <a class="navbar-brand logo" href="../index.html">Latitude</a>
         <button 
             class="navbar-toggler" 
             type="button" 
@@ -33,17 +33,17 @@
                     </a>
                     <div class="dropdown-menu"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="Visualizations/temp_visual.html">Max Temperature</a>
-                        <a class="dropdown-item" href="Visualizations/humidity_visual.html">Humidity</a>
-                        <a class="dropdown-item" href="Visualizations/cloudiness_visual.html">Cloudiness</a>
-                        <a class="dropdown-item" href="Visualizations/wind_visual.html">Wind Speed</a>
+                        <a class="dropdown-item" href="temp_visual.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity_visual.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness_visual.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_visual.html">Wind Speed</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
+                    <a class="nav-link" href="#">Comparison</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
+                    <a class="nav-link" href="#">Data</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@
         <div class = "col col-12 col-md-8 landingbody">
             <h1>Summary</h1>
             <hr>
-            <img src = "Images/temperature_v_latitude.png" alt = "Max-temp v Latitude" class = "img-fluid" width = "250" align = "left">
+            <img src = "Images/temperature_v_latitude.png" alt = "Max-temp v Latitude" class = "img-fluid">
             <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
             <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
             we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
@@ -64,26 +64,18 @@
         <div class = "col col-12 col-md-4 landingbody">
             <h1>Visualizations</h1>
             <hr>
-            <div class="row">
+            <div class="row mx-3">
                 <div class="col-4 col-md-6">
-                    <a href = "Visualizations/temp_visual.html">
-                        <img src="Images/temperature_v_latitude.png" alt = "temperature_v_latitude" class = "img-fluid">
-                    </a>
+                    <img src="Images/temperature_v_latitude.png" alt = "temperature_v_latitude" class = "img-fluid">
                   </div>
                 <div class = "col-4 col-md-6">
-                    <a href="Visualizations/humidity_visual.html">
-                        <img src = "Images/humidity_v_lat.png" alt = "humidity_v_latitude" class = "img-fluid">    
-                    </a>
+                    <img src = "Images/humidity_v_lat.png" alt = "humidity_v_latitude" class = "img-fluid">    
                 </div>
                 <div class = "col-4 col-md-6">
-                    <a href="Visualizations/cloudiness_visual.html">
-                        <img src = "Images/cloudiness_v_lat.png" alt = "cloudiness_v_latitude" class = "img-fluid">    
-                    </a>
+                    <img src = "Images/cloudiness_v_lat.png" alt = "cloudiness_v_latitude" class = "img-fluid">    
                 </div>
                 <div class = "col-4 col-md-6">
-                    <a href="Visualizations/wind_visual.html">
-                        <img src = "Images/wind_v_lat.png" alt = "wind_v_latitude" class = "img-fluid">    
-                    </a>
+                    <img src = "Images/wind_v_lat.png" alt = "wind_v_latitude" class = "img-fluid">    
                 </div>
             </div>
         </div>

@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Challenge</title>
+    <title>Comparison Visualization</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo" href="#">Latitude</a>
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#toggleMobileMenu" 
-            aria-controls="toggleMobileMenu" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" 
-                        href="#" 
-                        id="navbarDropdownMenuLink" 
-                        data-toggle="dropdown"
-                        aria-haspopup="true" 
-                        aria-expanded="false">
-                        Plots
-                    </a>
-                    <div class="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comparison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="index.html">Latitude</a>
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#toggleMobileMenu" 
+        aria-controls="toggleMobileMenu" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" 
+                    href="#" 
+                    id="navbarDropdownMenuLink" 
+                    data-toggle="dropdown"
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Visualizations/temp_visual.html">Max Temperature</a>
+                    <a class="dropdown-item" href="Visualizations/humidity_visual.html">Humidity</a>
+                    <a class="dropdown-item" href="Visualizations/cloudiness_visual.html">Cloudiness</a>
+                    <a class="dropdown-item" href="Visualizations/wind_visual.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <div class="container">
         <br>
@@ -61,19 +61,19 @@
             <div class='row'>
               <div class="col col-12 col-md-6">
                   <h3>vs. Max Temperature</h3>
-                <a href="visualization-1.html"><img src="images/Fig1.png" alt="Latitude vs. Temperature"></a>
+                <a href="visualization-1.html"><img src="Images/temperature_v_latitude.png" alt="Latitude vs. Temperature" class = "img-fluid"></a>
               </div>
               <div class="col col-12 col-md-6">
                   <h3>vs. Humidity</h3>
-                <a href="visualization-2.html"><img src="images/Fig2.png" alt="Latitude vs. Humidity"></a>
+                <a href="visualization-2.html"><img src="images/humidity_v_lat.png" alt="Latitude vs. Humidity" class = "img-fluid"></a>
               </div>
               <div class="col col-12 col-md-6">
                   <h3>vs. Cloudiness</h3>
-                <a href="visualization-3.html"><img src="images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+                <a href="visualization-3.html"><img src="images/cloudiness_v_lat.png" alt="Latitude vs. Cloudiness" class = "img-fluid"></a>
               </div>
               <div class="col col-12 col-md-6">
                   <h3>vs. Wind Speed</h3>
-                <a href="visualization-4.html"><img src="images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+                <a href="visualization-4.html"><img src="images/wind_v_lat.png" alt="Latitude vs. Wind Speed" class = "img-fluid"></a>
               </div>
             </div>
           </div>
