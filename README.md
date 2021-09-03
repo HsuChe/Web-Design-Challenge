@@ -15,49 +15,38 @@
 
 ## About The Project
 
-![hero image](https://github.com/HsuChe/sql-challenge/blob/066cf19bf3c139bb6051b43ccaf67d9ed1b1f578/images/hero_image.jpg)
+<img src = "Images\heroimage.jpg" alt = "Hero-Image">
 
-We will be building the database for an company while quering information regarding their employees, deparments, salaries and job titles.
+The homework is design to explore methods to present data by using HTML, bootstrap, and CSS.
 
-All the information is separated onto several different databases and the primary keys are linked together with many to many databases.
+* The Dataset that was used to generate the visualizations for this projects are from the weather date from cities that were collected before. 
 
-Features of the database:
+* We are going to be constructing 7 different pages
+1. homepage - index.html
+2. comparison page - comparison.html
+3. data page - data.html
+4. max-temperature visualization page - temp_visual.html
+5. cloudiness visualization page - cloudiness_visual.html
+6. windspeed visualization page - wind_visual.html
+7. humidity visualization page - humidity_visual.html
 
-* There are three tables with dedicated primary keys for them.
+  
 
-  * **The departments table**
-    * Table has department labels
-  * **The titles table.**
-    * Table has all the staff title labels.
-  * **The employees table**
-    * birth_date: birthday of the employee.
-    * first_name: first name of the employee
-    * last_name: last name of the employee
-    * sex: gender of the employee
-    * hire_date: the date that the employee was hired
-* The dataset is in the csv file format with delimiter of comma.
-* Download the department csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/departments.csv)
-* Download the dept_emp csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/dept_emp.csv)
-* Download the dept_manager csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/dept_manager.csv)
-* Download the employees csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/employees.csv)
-* Download the salaries csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/salaries.csv)
-* Download the titles csv click [HERE](https://github.com/HsuChe/sql-challenge/blob/f792740e3d3fe30d899a38788f8179959f835b81/data/titles.csv)
+## Using Bootstrap and creating the homepage
 
-## Importing the database to PostgresSQL
+The first focus was to create the homepage and it is separated into two primary categories:
 
-First step is to generate the EDR table for the database. This will define the relationships between all the tables and formulate the primary keys as well as all the foreign keys.
+1. The description and purpose of the project.
+2. The visualizations.
 
-![EDR Image](https://github.com/HsuChe/sql-challenge/blob/e6bd0ab02e69d7a78718266d43937b51b4436bc2/EDR.png)
+### Purpose of Project.
 
-We can begin creating tables and getting it ready for import and export. First we create the tables with the correct column names and data types. 
+To layout this section, we would need to have the image and the verbiage.
 
 ```sh
--- Create the Table Columns
--- first table departments
-CREATE TABLE departments(
-	dept_no VARCHAR NOT NULL,
-	dept_name VARCHAR NOT NULL);
-
+  <div class = "col-12 col-md-8">
+    <a href = ><img>
+  </div>
 ```
 
 Next we will copy the dedicated csv from our directories.
